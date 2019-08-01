@@ -24,8 +24,7 @@ requirements:
     - six
   run:
     - python
-    - dask
-    - distributed
+    - distributed >=2.2.0
     - mpi4py
 
 test:
