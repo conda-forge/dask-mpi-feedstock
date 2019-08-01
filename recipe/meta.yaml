@@ -42,7 +42,7 @@ about:
   license_file: LICENSE.txt
   summary: 'Deploy Dask using MPI4Py'
   description: |
-    Easily deploy Dask Distributed in an existing MPI environment,
+    Easily deploy Dask in an MPI environment,
     such as one created with the mpirun or mpiexec MPI launch commands.
   doc_url: http://dask-mpi.readthedocs.io
   dev_url: https://github.com/dask/dask-mpi
