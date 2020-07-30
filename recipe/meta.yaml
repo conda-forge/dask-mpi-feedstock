@@ -1,5 +1,5 @@
 {% set name = "dask-mpi" %}
-{% set version = "2.0.0" %}
+{% set version = "2.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 774cd2d69e5f7154e1fa133c22498062edd31507ffa2ea19f4ab4d8975c27bc3
+  sha256: 76e153fc8c58047d898970b33ede0ab1990bd4e69cc130c6627a96f11b12a1a7
 
 build:
   skip: true  # [win]
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - dask-mpi = dask_mpi.cli:go
 
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Deploy Dask using MPI4Py'
+  summary: Deploy Dask using MPI4Py
   description: |
     Easily deploy Dask in an MPI environment,
     such as one created with the mpirun or mpiexec MPI launch commands.
