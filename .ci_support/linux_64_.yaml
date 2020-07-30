@@ -6,3 +6,5 @@ docker_image:
 - condaforge/linux-anvil-comp7
 mpich:
 - '3.3'
+target_platform:
+- linux-64
