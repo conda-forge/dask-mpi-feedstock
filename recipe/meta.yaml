@@ -30,9 +30,11 @@ requirements:
 test:
   requires:
     - mpich
+    - pip
   imports:
     - dask_mpi
   commands:
+    - pip check
     - dask-mpi --help
 
 about:
