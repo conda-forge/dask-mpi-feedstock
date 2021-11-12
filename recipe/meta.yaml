@@ -1,5 +1,5 @@
 {% set name = "dask-mpi" %}
-{% set version = "2.21.0" %}
+{% set version = "2021.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 2
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - dask-mpi = dask_mpi.cli:go
