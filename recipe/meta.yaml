@@ -1,5 +1,5 @@
 {% set name = "dask-mpi" %}
-{% set version = "2021.11.0" %}
+{% set version = "2022.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 602d2e2d7816a4abc1eb17998e1acc93a43b6f82bf94a6accca169a42de21898
+  sha256: 0a04f1d7d35a06cdff506593330d4414ea242c9172498ce191f5742eac499e17
 
 build:
   skip: true  # [win]
