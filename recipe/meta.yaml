@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.8
     - pip
     - pyyaml
     - six
   run:
-    - python
+    - python >=3.8
     - distributed >=2.2.0
     - mpi4py
 
