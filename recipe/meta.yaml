@@ -24,7 +24,7 @@ requirements:
     - six
   run:
     - python
-    - distributed >=2022.4.0
+    - distributed >=2.2.0
     - mpi4py
 
 test:
