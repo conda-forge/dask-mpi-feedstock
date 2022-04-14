@@ -30,7 +30,7 @@ requirements:
 
 test:
   requires:
-    - {{ mpi }}
+    - mpich
     - pip
   imports:
     - dask_mpi
