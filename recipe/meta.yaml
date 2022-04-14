@@ -14,7 +14,7 @@ build:
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - dask-mpi = dask_mpi.cli:go
+    - dask-mpi = dask_mpi.cli:main
 
 requirements:
   host:
