@@ -29,7 +29,7 @@ requirements:
 
 test:
   requires:
-    - mpi4py
+    - {{ mpi }}
     - pip
   imports:
     - dask_mpi
