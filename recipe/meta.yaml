@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0a04f1d7d35a06cdff506593330d4414ea242c9172498ce191f5742eac499e17
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - pyyaml
     - six
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - distributed >=2.2.0
     - mpi4py
 
@@ -31,6 +31,7 @@ test:
   requires:
     - mpich
     - pip
+    - python {{ python_min }}
   imports:
     - dask_mpi
   commands:
