@@ -17,14 +17,13 @@ build:
     - dask-mpi = dask_mpi.cli:main
 
 requirements:
-  build:
-    - hatchling
-    - hatch-vcs
   host:
     - python {{ python_min }}
     - pip
     - pyyaml
     - six
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - distributed >=2.2.0
