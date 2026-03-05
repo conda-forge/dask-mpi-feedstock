@@ -17,6 +17,9 @@ build:
     - dask-mpi = dask_mpi.cli:main
 
 requirements:
+  build:
+    - hatchling
+    - hatch-vcs
   host:
     - python {{ python_min }}
     - pip
