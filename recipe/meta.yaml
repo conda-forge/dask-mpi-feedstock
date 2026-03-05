@@ -1,13 +1,13 @@
 {% set name = "dask-mpi" %}
-{% set version = "2025.10.0" %}
+{% set version = "2026.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 63140e74fac82e50798e57e7fdbdd254a51383cee5ca37aa6b345b18717583c0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 10ebe4e4a1d53c12546a08b4275bc762a4676a175cc40b5ecc6ca2c91e8a2e7e
 
 build:
   number: 0
